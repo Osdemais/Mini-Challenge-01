@@ -10,4 +10,8 @@
 
 @interface FilhoTableViewController : UITableViewController
 
+{
+    int filho;
+}
+
 @end
