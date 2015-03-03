@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A13E3D191AA6465F001D10FC /* FilhosSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = A13E3D181AA6465F001D10FC /* FilhosSingleton.m */; };
+		A148DAAB1AA611DD005C5434 /* Filho.m in Sources */ = {isa = PBXBuildFile; fileRef = A148DAAA1AA611DD005C5434 /* Filho.m */; };
 		A17939171AA5F1410003759F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A17939161AA5F1410003759F /* main.m */; };
 		A179391A1AA5F1410003759F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A17939191AA5F1410003759F /* AppDelegate.m */; };
 		A179391D1AA5F1410003759F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A179391C1AA5F1410003759F /* ViewController.m */; };
@@ -28,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A13E3D171AA6465F001D10FC /* FilhosSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilhosSingleton.h; sourceTree = "<group>"; };
+		A13E3D181AA6465F001D10FC /* FilhosSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilhosSingleton.m; sourceTree = "<group>"; };
+		A148DAA91AA611DD005C5434 /* Filho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filho.h; sourceTree = "<group>"; };
+		A148DAAA1AA611DD005C5434 /* Filho.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filho.m; sourceTree = "<group>"; };
 		A17939111AA5F1410003759F /* OndeEstaMeuFilho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OndeEstaMeuFilho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17939151AA5F1410003759F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A17939161AA5F1410003759F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,8 +94,12 @@
 				A17939191AA5F1410003759F /* AppDelegate.m */,
 				A179391B1AA5F1410003759F /* ViewController.h */,
 				A179391C1AA5F1410003759F /* ViewController.m */,
+				A148DAA91AA611DD005C5434 /* Filho.h */,
+				A148DAAA1AA611DD005C5434 /* Filho.m */,
 				A179393A1AA5F7ED0003759F /* FilhoTableViewController.h */,
 				A179393B1AA5F7ED0003759F /* FilhoTableViewController.m */,
+				A13E3D171AA6465F001D10FC /* FilhosSingleton.h */,
+				A13E3D181AA6465F001D10FC /* FilhosSingleton.m */,
 				A179391E1AA5F1410003759F /* Main.storyboard */,
 				A17939211AA5F1410003759F /* Images.xcassets */,
 				A17939231AA5F1410003759F /* LaunchScreen.xib */,
@@ -224,7 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A148DAAB1AA611DD005C5434 /* Filho.m in Sources */,
 				A179391D1AA5F1410003759F /* ViewController.m in Sources */,
+				A13E3D191AA6465F001D10FC /* FilhosSingleton.m in Sources */,
 				A179391A1AA5F1410003759F /* AppDelegate.m in Sources */,
 				A179393C1AA5F7ED0003759F /* FilhoTableViewController.m in Sources */,
 				A17939171AA5F1410003759F /* main.m in Sources */,
@@ -420,6 +432,7 @@
 				A17939361AA5F1410003759F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A17939371AA5F1410003759F /* Build configuration list for PBXNativeTarget "OndeEstaMeuFilhoTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +441,7 @@
 				A17939391AA5F1410003759F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

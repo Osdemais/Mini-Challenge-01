@@ -7,6 +7,8 @@
 //
 
 #import "FilhoTableViewController.h"
+#import "Filho.h"
+#import "FilhosSingleton.h"
 
 @interface FilhoTableViewController ()
 
@@ -16,6 +18,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    FilhosSingleton *fs = [[FilhosSingleton alloc] init];
+    
+    self.filhos = fs.filhos;
+    
+    //ficar um espaço maior no começo da tableView
+    self.tableView.contentInset = UIEdgeInsetsMake(20.0f, 0.0f, 0.0f, 0.0);
+
+    NSLog(@"%@", self.filhos);
+    
+    Filho *f = [[Filho alloc] init];
+    f.nome = @"Carl";
+    f.foto = nil;
+    f.coordenadas = MKMapPointMake(200, 200);
+    
+    [self.filhos addObject:f];
+    
+    NSLog(@"%@", self.filhos);
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -32,26 +53,25 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return self.filhos.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    Filho *f = [self.filhos objectAtIndex:[indexPath row]];
+        
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"celula"];
+    
+    cell.textLabel.text = f.nome;
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

@@ -1,15 +1,21 @@
 //
-//  FilhoTableViewController.h
+//  FilhosSingleton.h
 //  OndeEstaMeuFilho
 //
 //  Created by Ana Elisa Pessoa Aguiar on 03/03/15.
 //  Copyright (c) 2015 Ana Elisa Pessoa Aguiar. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface FilhoTableViewController : UITableViewController
+@interface FilhosSingleton : NSObject
 
 @property NSMutableArray *filhos;
+
+/**
+ * gets singleton object.
+ * @return singleton
+ */
++ (FilhosSingleton*)sharedInstance;
 
 @end
