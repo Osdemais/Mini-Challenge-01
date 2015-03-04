@@ -150,10 +150,21 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hbf-Pd-GqZ">
                                 <rect key="frame" x="270" y="186" width="97" height="58"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOx-5S-ix0">
+                                <rect key="frame" x="203" y="199" width="55" height="30"/>
+                                <state key="normal" title="Galeria">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="imagem:" destination="AhR-jb-bb2" eventType="touchUpInside" id="bIW-9Z-xXd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="escolherImagem" destination="wOx-5S-ix0" id="WDd-9g-glR"/>
+                        <outlet property="imagemFilho" destination="Hbf-Pd-GqZ" id="4Dh-cC-5ZQ"/>
                         <outlet property="novoFilho" destination="2YM-3A-R5h" id="JpJ-iw-Cc4"/>
                         <segue destination="Ddz-Fn-3S8" kind="show" identifier="Voltar" id="0St-zY-ope"/>
                     </connections>
