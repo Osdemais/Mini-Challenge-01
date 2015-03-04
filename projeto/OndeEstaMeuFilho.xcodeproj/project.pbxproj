@@ -31,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E359CAC1AA7270B0096987C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9E359CAE1AA727130096987C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A13E3D171AA6465F001D10FC /* FilhosSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilhosSingleton.h; sourceTree = "<group>"; };
 		A13E3D181AA6465F001D10FC /* FilhosSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilhosSingleton.m; sourceTree = "<group>"; };
 		A13E3D1A1AA64FE1001D10FC /* CadastrarFilhosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CadastrarFilhosViewController.h; sourceTree = "<group>"; };
@@ -77,8 +79,13 @@
 		A17939081AA5F1410003759F = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< Updated upstream
 				A174CFD21AA7264B00254292 /* CoreImage.framework */,
 				A174CFD01AA7263900254292 /* MapKit.framework */,
+=======
+				9E359CAE1AA727130096987C /* CoreLocation.framework */,
+				9E359CAC1AA7270B0096987C /* MapKit.framework */,
+>>>>>>> Stashed changes
 				A17939131AA5F1410003759F /* OndeEstaMeuFilho */,
 				A179392D1AA5F1410003759F /* OndeEstaMeuFilhoTests */,
 				A17939121AA5F1410003759F /* Products */,
