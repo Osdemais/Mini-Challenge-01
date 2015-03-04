@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FilhoTableViewController : UITableViewController
+@interface FilhoTableViewController : UIViewController
 
 @property NSMutableArray *filhos;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+
 
 @end

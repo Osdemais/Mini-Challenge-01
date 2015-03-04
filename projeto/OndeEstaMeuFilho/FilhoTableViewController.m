@@ -23,21 +23,6 @@
     
     self.filhos = fs.filhos;
     
-    //ficar um espaço maior no começo da tableView
-    self.tableView.contentInset = UIEdgeInsetsMake(20.0f, 0.0f, 0.0f, 0.0);
-
-    NSLog(@"%@", self.filhos);
-    
-    Filho *f = [[Filho alloc] init];
-    f.nome = @"Carl";
-    f.foto = nil;
-    f.coordenadas = MKMapPointMake(200, 200);
-    
-    [self.filhos addObject:f];
-    
-    NSLog(@"%@", self.filhos);
-    
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -118,3 +103,5 @@
 */
 
 @end
+
+//[self.tableview reloaddata]
